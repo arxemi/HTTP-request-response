@@ -19,7 +19,8 @@ public class ClientBrowser {
 		DataOutputStream os = new DataOutputStream(socket.getOutputStream());
 		DataInputStream is = new DataInputStream(socket.getInputStream());
 		
-		String packet = method+" "+resource+" HTTP/1.1\r\nAccept:\r\nAccept-Language: en-us\r\nUser-agent:Prova/1.0\r\nHost: "+url+"\r\n";
+		String packet = method+" "+resource+" HTTP/1.1\r\nAccept:\r\nAccept-Language: en-us\r\n"+
+				"User-agent:Prova/1.0\r\nHost: "+url+"\r\n";
 		int count = 0;
 		do{
 			os.writeBytes(packet + '\n');
