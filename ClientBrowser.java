@@ -32,6 +32,7 @@ public class ClientBrowser {
 		is.close();
 		socket.close();
     }
+    
 	public static void main (String[] args) throws Exception {
 		ClientBrowser tcpClient = new ClientBrowser();
 		tcpClient.start();
