@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>HTTP request</title>
+ 	<title>HTTP request</title>
 </head>
 <body>
 <h3>PHP page that try to connect with a web page and allows you to enter the method of HTTP request</h3>
